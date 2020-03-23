@@ -1,0 +1,15 @@
+<fieldset>
+  <legend>{{@title}}</legend>
+  {{#each this.cityNames as |cityName| }}
+    <div class="form-checkbox-group">
+      <input
+        type="checkbox"
+        id="input-{{cityName}}"
+        name={{@name}}
+        value={{cityName}}
+        checked={{this.isSelected}}
+        >
+      <label for="city-{{cityName}}">{{cityName}}</label>
+    </div>
+  {{/each}}
+</fieldset>

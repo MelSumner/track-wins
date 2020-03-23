@@ -1,0 +1,46 @@
+*, *:after {
+  box-sizing: border-box;
+}
+body {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.visually-hidden {
+  clip: rect(1px 1px 1px 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip-content {
+  background-color: #2d2d2d;
+  border-radius: 3px;
+  border: 1px solid black;
+  color: white;
+  left: 0;
+  opacity: 0;
+  padding: 0.25em;
+  position: absolute;
+  top: 20px;
+  z-index: 1;
+}
+
+.tooltip-trigger:hover + .tooltip-content,
+.tooltip-trigger:focus + .tooltip-content,
+.tooltip-content:hover,
+.tooltip-content:focus {
+  clip: auto;
+  height: auto;
+  opacity: 1;
+  overflow: visible;
+  white-space: normal;
+  width: 200px;
+}
