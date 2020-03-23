@@ -44,3 +44,5 @@ body {
   white-space: normal;
   width: 200px;
 }
+
+@supports (-webkit-overflow-scrolling: touch) { /* CSS specific to iOS devices */ body{ cursor:pointer; } }
